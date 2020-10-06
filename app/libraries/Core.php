@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * App Core Class
+ * Creates UEL & loads core controller
+ * URL FORMAT - /controller/method/params
+ */
+
 class Core{
     protected $currentController = 'page';
     protected $currentMethod = 'index';
