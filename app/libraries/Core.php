@@ -29,8 +29,12 @@ class Core{
             }
         }
         // TODO: What the hell of this
+        // $url will check for a truthy value from the variable itself.
+        // $url = (!empty($url))
         $this->params = $url ? array_values($url) : [];
 
+        // call_user_func_array(['pages', 'index'], $params);
+        // here تمرير قيمة المصفوفة الاخيرة الى الميثيد
         call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
     }
 
