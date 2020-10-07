@@ -10,15 +10,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41952d5f-c77e-42d7-83b1-12f09ad682e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/pages/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/pages/index.php" afterDir="false" />
+    <list default="true" id="41952d5f-c77e-42d7-83b1-12f09ad682e0" name="Default Changelist" comment="work with core file">
+      <change afterPath="$PROJECT_DIR$/app/config/confing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2020_10_24_am__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2020_10_24_am__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_10_2020_11_20_am__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_10_2020_11_20_am__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_2020_5_33_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_2020_5_33_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Pages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/libraries/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Core.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/mine.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,8 +74,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601900542921</updated>
-      <workItem from="1601900543992" duration="477000" />
+      <workItem from="1601900543992" duration="1383000" />
+      <workItem from="1601919200529" duration="35000" />
+      <workItem from="1601920195025" duration="1935000" />
+      <workItem from="1601923779225" duration="1697000" />
+      <workItem from="1601927981895" duration="809000" />
+      <workItem from="1601934814895" duration="839000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1601901333942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601901333942</updated>
+    </task>
+    <task id="LOCAL-00002" summary="start with core file">
+      <created>1601928023729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601928023729</updated>
+    </task>
+    <task id="LOCAL-00003" summary="style files">
+      <created>1601928187317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601928187317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,10 +120,24 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="start with core file" />
+    <MESSAGE value="style files" />
+    <option name="LAST_COMMIT_MESSAGE" value="style files" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="738" y="451" key="NewPhpFileDialog" timestamp="1602075502292">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1601995591709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="738" y="451" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602075502292" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601995591709" />
+    <state x="738" y="451" key="NewPhpFileDialog" timestamp="1602094776956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="451" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602094776956" />
+    <state x="579" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601928191582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="579" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601928191582" />
   </component>
 </project>
