@@ -17,7 +17,7 @@ class Database {
     private $error;
 
     public function __construct(){
-        // Set DSN
+        // Set DSN - Data Source Name
         $dsn = 'mysql:host='.$this->host.';dbname='.$this->dbname;
         $options = array(
             PDO::ATTR_PERSISTENT => true,
@@ -40,6 +40,7 @@ class Database {
     }
 
     // Bind values
+    // bindValue — Binds a value to a parameter
     public function bind($param, $value, $type = null){
         if(is_null($type)){
             switch(true){

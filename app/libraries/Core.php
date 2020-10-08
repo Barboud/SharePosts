@@ -28,7 +28,6 @@ class Core{
                 unset($url[1]);
             }
         }
-        // TODO: What the hell of this
         // $url will check for a truthy value from the variable itself.
         // $url = (!empty($url))
         $this->params = $url ? array_values($url) : [];
