@@ -9,7 +9,7 @@ class Pages extends Controller {
         $posts = $this->postModel->getPosts();
 
         $data = [
-            'title' => 'Welcome',
+            'title' => 'index',
             'posts' => $posts
         ];
 

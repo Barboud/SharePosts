@@ -34,6 +34,7 @@ class Core{
 
         // call_user_func_array(['pages', 'index'], $params);
         // here تمرير قيمة المصفوفة الاخيرة الى الميثيد
+        // and وهي المسؤولة عن تشغيل الميثد المختار
         call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
     }
 
