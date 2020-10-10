@@ -57,7 +57,8 @@ class Database {
                     $type = PDO::PARAM_STR;
             }
         }
-        // TODO: Search about bindValue
+        // $sth->bindValue(':calories', $calories, PDO::PARAM_INT);
+        // $sth->bindValue(':colour', $colour, PDO::PARAM_STR);
         $this->stmt->bindValue($param, $value, $type);
     }
 
