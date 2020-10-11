@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 11, 2020 at 01:48 PM
+-- Generation Time: Oct 11, 2020 at 07:57 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -36,7 +36,15 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `body` text NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `user_id`, `title`, `body`, `created_at`) VALUES
+(1, 7, 'test', 'just for test', '2020-10-11 21:49:32'),
+(2, 7, 'just for test', 'test test testtesttest test testtest test', '2020-10-11 21:49:32');
 
 -- --------------------------------------------------------
 
@@ -52,14 +60,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`) VALUES
-(1, 'Salem', 'barboud@gmail.com', '123', '2020-10-11 16:48:38');
+(7, 'Salem Barboud', 'barboud@gmail.com', '$2y$10$YsHkadJr26xBhAcPUA5ozeY4VRkbminXpzw0LWKfbsAz33Ae7gtQu', '2020-10-11 21:04:32');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
