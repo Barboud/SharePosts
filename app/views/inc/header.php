@@ -13,5 +13,5 @@
 </head>
 <body>
 <?php require APPROOT . '/views/inc/navbar.php'; ?>
-<dir class="container">
+<div class="container">
 
