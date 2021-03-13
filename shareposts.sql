@@ -30,13 +30,13 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `posts`;
 CREATE TABLE IF NOT EXISTS `posts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  `title` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `body` text CHARACTER SET latin1 NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `body` mediumtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `posts`
@@ -55,11 +55,11 @@ INSERT INTO `posts` (`id`, `user_id`, `title`, `body`, `created_at`) VALUES
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `email` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `password` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
